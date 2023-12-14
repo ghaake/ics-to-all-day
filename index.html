@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="src/favicon.png">
+
+    <!-- SEO Tags -->
+    <title>ICS All-Day Event Converter | ICS Ganztägiges Ereignis Konverter</title>
+    <meta name="description" content="Easily convert events in your ICS files to all-day events. Simple and efficient tool for calendar management. Events in ICS-Dateien einfach in ganztägige Ereignisse umwandeln. Einfaches und effizientes Werkzeug zur Kalenderverwaltung.">
+    <meta name="keywords" content="ICS, calendar, all-day event, event converter, Kalender, ganztägiges Ereignis, Ereigniskonverter">
+
+    <!-- Specify language of the document -->
+    <meta http-equiv="content-language" content="en, de">
+
+    <!-- Open Graph and Twitter Card data for social media sharing -->
+    <meta property="og:title" content="ICS All-Day Event Converter | ICS Ganztägiges Ereignis Konverter">
+    <meta property="og:description" content="Easily convert events in your ICS files to all-day events. Simple and efficient tool for calendar management. Events in ICS-Dateien einfach in ganztägige Ereignisse umwandeln. Einfaches und effizientes Werkzeug zur Kalenderverwaltung.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ghaake.github.io/ics-to-all-day/">
+    <meta property="og:image" content="https://ghaake.github.io/ics-to-all-day/src/logo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ICS All-Day Event Converter | ICS Ganztägiges Ereignis Konverter">
+    <meta name="twitter:description" content="Easily convert events in your ICS files to all-day events. Simple and efficient tool for calendar management. Events in ICS-Dateien einfach in ganztägige Ereignisse umwandeln. Einfaches und effizientes Werkzeug zur Kalenderverwaltung.">
+    <meta name="twitter:image" content="https://ghaake.github.io/ics-to-all-day/src/logo.png">
+
+    <link rel="stylesheet" href="src/main.css">
+</head>
+<body>
+    <header>
+        <h1>ICS File Modifier</h1>
+        <div class="container" style="margin: 20px;">
+            <p>This tool converts all events in an ics file to all day events.</p>
+            <p>Simply upload your ics file using the <b>Browse</b>-Button, press <b>Convert</b> and download the modfied .ics File.</p>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Upload file</h2>
+        <input class="custom-file-input" type="file" id="fileInput">
+        <button id="convertButton">Convert to All-Day Events</button>
+        <a id="downloadLink" class="disabled">Download Modified File</a>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> - ghaake</p>
+        <p>By using this ICS Converter, you acknowledge that you have read and agreed to all terms and conditions outlined in the licenses and agreements of this repository. For more details, please visit <a href="https://github.com/ghaake/ics-to-all-day" target="_blank">https://github.com/ghaake/ics-to-all-day</a></p>
+    </footer>
+
+    <script src="src/modifier.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
