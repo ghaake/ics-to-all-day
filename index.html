@@ -29,17 +29,15 @@
     <link rel="stylesheet" href="src/main.css">
 </head>
 <body>
-    <header>
-        <h1>ICS File Modifier</h1>
-        <div class="container" style="margin: 20px;">
-            <p>This tool converts all events in an ics file to all day events.</p>
-            <p>Simply upload your ics file using the <b>Browse</b>-Button, press <b>Convert</b> and download the modfied .ics File.</p>
-        </div>
-    </header>
     <div class="container">
-        <h2>Upload file</h2>
-        <input class="custom-file-input" type="file" id="fileInput">
-        <button id="convertButton">Convert to All-Day Events</button>
+        <h1>ICS File Modifier</h1>
+        <p>This tool converts all events in an ics file to all day events.</p>
+        <p>Simply upload your ics file using the <b>Upload File</b>-Button, press <b>Convert</b> and download the modfied .ics File.</p>
+        <label for="file-upload" class="btn">
+            <span>Upload File</span>
+        </label>
+        <input class="custom-file-input" type="file" id="file-upload">
+        <button class="btn">Convert to All-Day Events</button>
         <a id="downloadLink" class="disabled">Download Modified File</a>
     </div>
 

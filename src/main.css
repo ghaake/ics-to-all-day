@@ -1,11 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #eee;
 }
 
 header {
@@ -17,34 +17,22 @@ header {
 .container {
     text-align: center;
     background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
+    max-width: 400px;
 }
 
-#fileInput,
-#convertButton,
+.btn,
 #downloadLink {
     display: block;
     margin: 15px auto;
     padding: 15px 0px;
 }
 
-#fileInput::file-selector-button {
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-
-    box-shadow: none;
-    border: none;
-    font-size: 20px;
-    width: 30%;
-}
-
-#fileInput,
-#convertButton,
+.btn,
 #downloadLink {
-    background-color: #4CAF50;
+    background-color: #6200ea;
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -55,9 +43,13 @@ header {
     cursor: pointer;
 }
 
-#convertButton:hover,
+input#file-upload[type="file"] {
+    display: none;
+}
+
+.btn:hover,
 #downloadLink:hover {
-    background-color: #45a049;
+    background-color: #3700b3;
 }
 
 #downloadLink.disabled {
@@ -74,18 +66,21 @@ footer {
     position: absolute;
     width: 100%;
     bottom: 0;
-    background-color: #333;
+    background-color: #fff;
     color: white;
     text-align: center;
     padding: 10px 0;
     font-size: 14px;
+    color: gray;
 }
 
 footer a {
-    color: #fff;
+    color: #3700b3;
     text-decoration: none;
 }
 
-footer a:hover {
+footer a:hover,
+footer a:visited {
+    color: #3700b3;
     text-decoration: underline;
 }
