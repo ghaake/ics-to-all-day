@@ -1,5 +1,5 @@
-document.getElementById('convertButton').addEventListener('click', function() {
-    const fileInput = document.getElementById('fileInput');
+document.getElementById('convert-btn').addEventListener('click', function() {
+    const fileInput = document.getElementById('file-upload');
     const file = fileInput.files[0];
 
     if (file) {
